@@ -2,12 +2,12 @@ version: "2.4"
 
 services:
   build_foobar:
-    image: foobar:1.0.0
+    image: foobar:${VERSION}
     build:
       context: ./
 
   build_barbaz:
-    image: foobar.com/barbaz:1.0.0
+    image: foobar.com/barbaz:${VERSION}
     build:
      context: ./subdir
      dockerfile: barbaz.Dockerfile
